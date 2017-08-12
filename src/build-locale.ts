@@ -26,7 +26,7 @@ export class BuildLocale {
 
   static mapAppNames(apps: AngularConfigApp[]): Array<string | number> {
     return apps.map((item, index) => {
-      return _.get(item, 'item.name', index);
+      return _.get(item, 'name', index);
     });
   }
 
