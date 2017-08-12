@@ -1,19 +1,14 @@
 {
-  "name": "a-localization",
-  "version": "0.0.0",
+  "name": "a-locale",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "concurrently \"tsc -w -p src\"",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start": "concurrently \"tsc -w -p src\""
   },
-  "private": true,
   "dependencies": {
     "@types/fs-extra": "^4.0.0",
     "@types/lodash": "^4.14.72",
+    "codecov.io": "^0.1.6",
     "concurrently": "^3.5.0",
     "fs-extra": "^4.0.1",
     "lodash": "^4.17.4",
