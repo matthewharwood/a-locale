@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "commit": "git-cz ",
-    "test": "jest",
+    "test": "jest --watchAll",
+    "test:single": "jest",
     "start": "concurrently \"tsc -w -p .\"",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -28,6 +29,7 @@
     "concurrently": "^3.5.0",
     "cz-conventional-changelog": "^2.0.0",
     "fs-extra": "^4.0.1",
+    "ghooks": "^2.0.0",
     "jest": "^20.0.4",
     "lodash": "^4.17.4",
     "nodemon": "^1.11.0",
@@ -46,5 +48,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/matthewharwood/a-locale.git"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test:single"
+    }
   }
 }
