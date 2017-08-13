@@ -1,10 +1,10 @@
 {
   "name": "a-locale",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "version": "0.0.0-development",
   "license": "MIT",
   "scripts": {
-    "commit": "tsc -p ./tsconfig.prod.json && git add -A && git-cz",
+    "commit": "tsc -p ./tsconfig.json && git add -A && git-cz",
     "test": "jest --watchAll",
     "coverage": "npm run test:single && live-server ./coverage/lcov-report",
     "test:single": "jest",
@@ -21,6 +21,9 @@
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
     "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"]
   },
+  "files": [
+    "dist/"
+  ],
   "dependencies": {
     "codecov.io": "^0.1.6",
     "commitizen": "^2.9.6",
