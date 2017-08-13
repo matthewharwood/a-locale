@@ -18,15 +18,10 @@
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js)$",
-    "moduleFileExtensions": [
-      "js"
-    ]
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"]
   },
   "dependencies": {
-    "@types/fs-extra": "^4.0.0",
-    "@types/jest": "^20.0.6",
-    "@types/lodash": "^4.14.72",
     "codecov.io": "^0.1.6",
     "commitizen": "^2.9.6",
     "concurrently": "^3.5.0",
@@ -40,6 +35,9 @@
     "ts-jest": "^20.0.10"
   },
   "devDependencies": {
+    "@types/fs-extra": "^4.0.0",
+    "@types/jest": "^20.0.6",
+    "@types/lodash": "^4.14.72",
     "@types/node": "^8.0.20",
     "semantic-release": "^6.3.6",
     "ts-node": "~3.0.4",
