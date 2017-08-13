@@ -22,7 +22,7 @@
     "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"]
   },
   "files": [
-    "dist/"
+    "bundle/"
   ],
   "dependencies": {
     "codecov.io": "^0.1.6",
