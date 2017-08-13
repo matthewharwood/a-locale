@@ -6,7 +6,6 @@
 /out-tsc
 *.js
 *.js.*
-!/src/index.js
 # dependencies
 /node_modules
 
