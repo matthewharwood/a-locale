@@ -20,8 +20,6 @@
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js)$",
     "moduleFileExtensions": [
-      "ts",
-      "tsx",
       "js"
     ]
   },
